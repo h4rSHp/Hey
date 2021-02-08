@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: relative;
+}
+.header .intro {
+  transform: scale(1.1);
+}
+.header .intro p {
+  margin-bottom: 10px;
+}
+.header .intro h3,
+.header .intro h1 {
+  font-family: "Oswald", sans-serif;
+}
+.header .intro #line {
+  margin: auto;
+  background-color: #ebc10a;
+}
+.header .img,
+.header .intro {
+  position: absolute;
+  top: 0;
+}
+.header .img {
+  z-index: -1;
+  top: -200px;
+  left: -100px;
+}
+.header .intro {
+  width: 100vw;
+  margin-top: 40vh;
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .img {
+    left: -500px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .img {
+    left: -800px;
+  }
+}
+.lowerRect {
+  overflow: hidden;
+  position: relative;
+  padding: 50px;
+  background-color: #06254d;
+  color: white;
+}
+
+.aboutMeHeading {
+  color: #ebc10a;
+  padding-bottom: 30px;
+}
+
+.illustration_b {
+  color: white;
+  margin: 50px 0;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: none;
+  border: 3px solid #ebc10a;
+}
+
+.illustration_b:hover {
+  background-color: #0b4085;
+  transform: scale(1.05);
+  box-shadow: 1px 1px 2px #ebc10a;
+}
+
+.cubes {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  animation: rotate 10s ease-in-out infinite alternate;
+}
+
+.cubes-2 {
+  opacity: 0;
+  position: absolute;
+  left: 60vw;
+  animation: rotate 10s ease-in-out infinite alternate;
+}
+
+.cube {
+  opacity: 0;
+  margin: 40px;
+  border: 3px solid #ebc10a;
+  width: 80px;
+  height: 80px;
+  animation: cube 8s ease-in-out 3s infinite alternate;
+}
+
+@keyframes cube {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2) rotate(720deg);
+    opacity: 0;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+.contactBar {
+  text-align: center;
+  background-color: #ebc10a;
+  width: 100vw;
+}
+.contactBar a i {
+  margin: 0 2px;
+  padding: 5px;
+  color: #06254d;
+}
+.contactBar .fab:hover,
+.contactBar .fas:hover {
+  background-color: #06254d;
+  color: #ebc10a;
+}
+
+/*# sourceMappingURL=style.css.map */
