@@ -63,10 +63,13 @@ a {
 }
 
 .aboutMeHeading {
+  font-family: 'Open Sans', sans-serif;
   color: #ebc10a;
   padding-bottom: 30px;
 }
-
+.lower rect p{
+  font-family: 'Noto Sans', sans-serif;
+}
 .illustration_b {
   color: white;
   margin: 50px 0;
