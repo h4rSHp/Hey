@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Illustrations</title>
     <link rel="stylesheet" href="illustration.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body>
+
+<body id="top">
         <!-- Photo Grid -->
         <!-- <div class="row">
             <div class="column">
@@ -27,9 +29,23 @@
             </div>
         </div> -->
         <div class="download">
-            <a href="https://southindia1-mediap.svc.ms/transform/zip?cs=fFNQTw"><button>Download PDF</button></a>
-            <a href="https://southindia1-mediap.svc.ms/transform/zip?cs=fFNQTw"><button>Download ZIP</button></a>
+            <div id = "downloadArrow" onclick="changeDisplay()">
+                <span class = "material-icons" id="downloadArrowIcon" style="font-size : 35px;">keyboard_arrow_up</span>
+            </div>
+            <div id = "downloadContent">
+                <a href="https://iitk-my.sharepoint.com/personal/harshp_iitk_ac_in/_layouts/15/download.aspx?UniqueId=12da9618%2D1eba%2D4b2e%2D8d98%2D1ac5694fdd59" title="Download all images in one PDF"><button>Download PDF</button>
+                </a>
+                <a href="#" title="Download all images in ZIP"><button style="cursor: no-drop;">Download ZIP</button></a>
+            </div>
         </div>
+        <!--  -->
+        <!-- Back to Top -->
+        <!--  -->
+        <a href="#top" id="arrow" title="Go to top">
+            <i class="material-icons arrow">
+                reply_all
+            </i>
+        </a>
         <div class="container">
             <div class="element">
                 <img src="illustration/AddFriends.png">
@@ -57,4 +73,37 @@
             </div>
         </div>
 </body>
+
+<script>
+    // 
+    //DropDown
+    // 
+    var myIcon = document.getElementById("downloadArrowIcon");
+    var myBtn = document.getElementById("downloadArrow");
+    var myContent = document.getElementById("downloadContent");
+    function changeDisplay() {
+        if (myContent.style.display === "none") {
+            myContent.style.display = "block";
+            myIcon.style.transform = "rotate(180deg)";
+        }
+        else {
+            myContent.style.display = "none";
+            myIcon.style.transform = "rotate(180deg)";
+        }
+    }
+    // 
+    //Go to Top 
+    // 
+    var mybutton = document.getElementsById("arrow");
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            mybutton.style.display = "none";
+        } 
+        else {
+            mybutton.style.display = "block";
+        }
+    }
+</script>
+
 </html>
