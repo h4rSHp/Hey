@@ -17,7 +17,17 @@
   <!--  -->
   <!-- Front Image and Title -->
   <!--  -->
-  <div class="header" style="overflow: hidden;text-align: center;">
+  <div class="header" id="header" style="overflow: hidden;text-align: center;">
+          <div class="dropdown" id="dropdown">
+            <button class="fas fa-chevron-circle-down dropbtn" onclick="myFunction()"> Menu</button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#header">Home</a>
+              <a href="#lowerRect">About Me</a>
+              <a href="#Works">Works</a>
+              <a href="#Comment">Leave a Comment</a>
+              <a href="#contactBar">Contact Me</a>
+            </div>
+          </div>
     <div class="img_rect" 
       style="height: 100vh;
           max-width: 1920px;
@@ -25,7 +35,7 @@
           text-align: center;"
         >
       <div class="img" style="text-align: center;">
-        <img src="IMG_8217.jpg" alt="Image does not exist" class="bg_image" style="max-width: 1650px">
+        <img src="Images/IMG_8217.jpg" alt="Image does not exist" class="bg_image" style="max-width: 1650px">
       </div>
       <div class="intro">
         <p style="font-family: 'Caveat',cursive;">Hey  <span style="color: rgb(243, 220, 13);"> I'm</span></p>
@@ -38,8 +48,8 @@
   <!--  -->
   <!-- Middle COntainer -->
   <!--  -->
-    <div class="lowerRect" style="text-align: center; overflow: hidden;">
-      <div class="cubes">
+    <div class="lowerRect" id="lowerRect" style="text-align: center; overflow: hidden;">
+      <!-- <div class="cubes">
         <div class="cube"></div>
         <div class="cube"></div>
         <div class="cube"></div>
@@ -56,7 +66,7 @@
         <div class="cube"></div>
         <div class="cube"></div>
         <div class="cube"></div>
-      </div>
+      </div> -->
       <div class="aboutMeHeading">
         <h2>ABOUT ME</h2>
       </div>
@@ -65,83 +75,92 @@
 
       <!-- Middle Buttons -->
 
-      <div class="flex_btn">
-        <a 
-          href="illustration.html" target="_blank">
-            <button class="lower_btn">Illustrations</button>
-        </a>
-        <a href="#" target="_blank">
-          <button class="lower_btn">Animation</button>
-        </a>
-        <a href="#" target="_blank" style="cursor: no-drop;">
-          <button class="lower_btn" disabled="true" style="cursor: no-drop;">Video Editing</button>
-        </a>
+      <div class="flex_btn" id="Works">
+        <a href="illustration.html" target="_blank" class="lower_btn"><i class="fas fa-bezier-curve"></i>Illustrations</a>
+        <a href="#" target="_blank" class="lower_btn"><div><i><img src="svg/animation-black-18dp.svg" alt="SVG"></i></div>Animation</a>
+        <a href="#" target="_blank" class="lower_btn"><div><i><img src="svg/Animation2.svg" alt="SVG"></i></div>Video Editing</a>
+        <a href="#" target="_blank" class="lower_btn"><i class="far fa-file-code"></i>Web Dev</a>
+        <a href="#" target="_blank" class="lower_btn"><i class="fas fa-camera-retro"></i>Photography</a>
+        <a href="#" target="_blank" class="lower_btn"><i class="fas fa-film"></i>Movies</a>
       </div>
   </div>
 
-  <!-- Comment Box -->
+  <!-- Contact Bar -->
 
-  <div class="comment">
+  <div class="contactBar" title="Contact Me" id="contactBar">
+    <h2 style="color: rgb(0, 75, 146);">Contact Me</h2>
+    <a href="https://www.facebook.com/h4r5hp/" title="Facebook">
+      <i class="fab fa-facebook-f"><br><span style="font-size: 18px;">Facebook</span></i>
+    </a>
+    <a href="https://www.instagram.com/h4r5h.p/" title="Instagram">
+      <i class="fab fa-instagram"><br><span style="font-size: 18px;">Instagram</span></i>
+    </a>
+    <a href="#" title="linkedin">
+      <i class="fab fa-linkedin-in"><br><span style="font-size: 18px;">Linkedin</span></i>
+    </a> 
+    <a href="#" title="GitHub">
+      <i class="fab fa-github"><br><span style="font-size: 18px;">GitHub</span></i>
+    </a>
+    <a href="#" title="Email">
+      <i class="fas fa-envelope"><br><span style="font-size: 18px;">Email</span></i>
+    </a>
+  </div>
+
+  <!-- Comment Box -->
+  
+  <div class="comment" id="Comment">
     <form id="commentForm" onsubmit="return postToGoogle();" action="" autocomplete="off" class="comment_form">
       <h3 style="align-self: center;">Leave a Comment : </h3>
       <input id="commentText" name="entry.1486345417" placeholder="Enter the comment..." type="text" required>
       <input type="submit" name="submit" value="Submit" id="send">
     </form>
     <div class="successContainer">
-      <span class="success" style="display: none; color: white;" onclick="fadeOut()">Thanks for Feedback</span>
-      </div>
-      <script>
-
-        function fadeOut() {
-          document.getElementsByClassName('success').style.display = "none";
-        }
-
-        
-        function postToGoogle() {
-          var field1 = $("#commentText").val();
-          if (field1 == "") {
-            alert('Please Fill Your Name');
-            document.getElementById("commentText").focus();
-            return false;
-          }
-          $.ajax({
-            url: "https://docs.google.com/forms/d/e/1FAIpQLSdTtMRq9zB6nMZQNRvjDVtQrcPuOPbyvSNq3ggC6E31Fs5D4g/formResponse?",
-            data: { "entry.1486345417": field1 },
-            type: "POST",
-            dataType: "xml",
-            success: function(d) {
-            },
-            error: function (x) {
-              $('.success').fadeIn(1000);
-              setTimeout(function () {$('.success').fadeOut(1000)}, 3000);
-            }
-          });
-          document.getElementById('commentText').value="";
-          document.activeElement.blur();
-          return false;
-        }
-      </script>
-  </div>
-
-  <!-- Contact Bar -->
-
-  <div class="contactBar" title="Contact Me">
-    <a href="https://www.facebook.com/h4r5hp/" title="Facebook">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-    <a href="https://www.instagram.com/h4r5h.p/" title="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="#" title="linkedin">
-      <i class="fab fa-linkedin-in"></i>
-    </a> 
-    <a href="#" title="GitHub">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="#" title="Email">
-      <i class="fas fa-envelope"></i>
-    </a>
+      <span class="success" style="display: none; color: white;">Thanks for Feedback</span>
+    </div>
+  
   </div>
 </body>
+<script>
 
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+  function postToGoogle() {
+    var field1 = $("#commentText").val();
+    if (field1 == "") {
+      alert('Please Fill Your Name');
+      document.getElementById("commentText").focus();
+      return false;
+    }
+    $.ajax({
+      url: "https://docs.google.com/forms/d/e/1FAIpQLSdTtMRq9zB6nMZQNRvjDVtQrcPuOPbyvSNq3ggC6E31Fs5D4g/formResponse?",
+      data: { "entry.1486345417": field1 },
+      type: "POST",
+      dataType: "xml",
+      success: function (d) {
+      },
+      error: function (x) {
+        $('.success').fadeIn(1000);
+        setTimeout(function () { $('.success').fadeOut(1000) }, 3000);
+      }
+    });
+    document.getElementById('commentText').value = "";
+    document.activeElement.blur();
+    return false;
+  }
+</script>
 </html>
