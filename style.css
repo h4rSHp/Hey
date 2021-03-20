@@ -5,11 +5,69 @@
 
 body {
   width: 100%;
+  position: relative;
 }
 
 a {
   text-decoration: none;
 }
+/*  */
+/*  */
+.dropbtn {
+  width: 100%;
+  background-color: #02345571;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  border: none;
+  background-color: #00508691;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  min-width: 100%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  background-color: #003a9234;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: white;
+  background-color: #003a927c;
+  box-shadow: 1px 1px 12px rgba(0, 37, 139, 0.473);
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+/*  */
+/*  */
 
 .header {
   text-align: center;
@@ -40,7 +98,8 @@ a {
   left: -100px;
 }
 .header .intro {
-  width: 100vw;
+  z-index: 10;
+  width: 100%;
   margin-top: 40vh;
   color: white;
 }
@@ -56,15 +115,19 @@ a {
     left: -800px;
   }
 }
+/*  */
+/*  */
+/*  */
 .lowerRect {
   overflow: hidden;
   position: relative;
   padding: 50px;
-  background-color: #27014b;
+  background-color: #6f18c0;
   color: white;
 }
 
 .aboutMeHeading {
+  font-weight: 1000;
   color: #ebc10a;
   padding-bottom: 30px;
 }
@@ -74,6 +137,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   margin: 50px 0;
 }
 .lower_btn {
@@ -83,19 +147,31 @@ a {
   cursor: pointer;
 }
 .flex_btn a {
-  background-color: #0a3a79;
+  background-color: #6f18c0;
   color: #ffffff;
-  padding: 10px 15px;
-  margin: 10px;
-  font-size: 15px;
+  font-size: 18px;
+  padding: 60px 50px;
+  margin: 25px 40px;
   cursor: pointer;
+  box-shadow: 1px 1px 10px #3b0072;
+}
+.flex_btn a i {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+.flex_btn a i img {
+  width: 60px;
+  height: 60px;
 }
 .flex_btn a:hover {
-  background-color: #0a54b4;
+  background-color: #6200b3;
+  color: #ffffff;
+  box-shadow: 2px 2px 12px #3b0072;
 }
 /*  */
 /*  */
-.cubes {
+/* .cubes {
   transform: scale(0.05);
   margin: auto;
   position: absolute;
@@ -138,14 +214,14 @@ a {
     transform: rotate(360deg);
     opacity: 0;
   }
-}
+} */
 /*  */
 /*  */
 /*  */
 .comment {
   position: relative;
   padding: 30px 50px;
-  background-color: teal;
+  background-color: #6f18c0;
   color: white;
 }
 .comment_form {
@@ -191,19 +267,26 @@ a {
 /*  */
 /*  */
 .contactBar {
+  padding: 10px 0 40px 0;
   text-align: center;
   background-color: #ebc10a;
   width: 100%;
 }
+.contactBar h2 {
+  padding: 20px 0;
+}
 .contactBar a i {
-  margin: 0 4px;
-  padding: 8px 10px;
+  box-shadow: 1px 1px 10px #b49300;
+  font-size: 60px;
+  margin: 10px 40px;
+  padding: 50px 60px;
   color: #06254d;
 }
 .contactBar .fab:hover,
 .contactBar .fas:hover {
   background-color: #06254d;
   color: #ebc10a;
+  box-shadow: 2px 2px 12px #b49300;
 }
 
 /*# sourceMappingURL=style.css.map */
