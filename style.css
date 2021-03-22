@@ -11,6 +11,7 @@ a {
   text-decoration: none;
 }
 /*  */
+/* Front Image and Name  */
 /*  */
 .header {
   text-align: center;
@@ -37,7 +38,7 @@ a {
 }
 .header .img {
   z-index: -1;
-  top: -200px;
+  top: -250px;
   left: -100px;
 }
 .header .intro {
@@ -47,30 +48,25 @@ a {
   color: white;
 }
 @media screen and (max-width: 1200px) {
-  .img {
-    position: absolute;
+  .header .img {
+    transform: scale(0.8);
     left: -500px;
+    top: -300px;
   }
 }
 @media screen and (max-width: 700px) {
-  .img {
-    position: absolute;
-    left: -800px;
+  .header .img {
+    transform: scale(0.7);
+    left: -750px;
+    top: -350px;
   }
 }
 /*  */
+/* About Me */
 /*  */
-/*  */
-.lowerRect {
-  overflow: hidden;
-  position: relative;
-  padding: 50px;
-  background-color: #551492f3;
-  color: white;
-}
-
 .aboutMeHeading,
-.lowerRect h1 {
+.lowerRect h1,
+.contactBar h1 {
   font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 1000;
@@ -84,6 +80,9 @@ a {
   padding: 70px 60px;
   text-align: center;
 }
+.introduction p a:hover {
+  text-decoration: underline;
+}
 @media screen and (max-width: 700px) {
   .introduction p {
     font-size: 20px;
@@ -91,6 +90,96 @@ a {
   .introduction {
     padding: 70px 45px;
   }
+}
+/*  */
+/* Education */
+/*  */
+.education {
+  background-color: #ebc10a;
+  text-align: center;
+  padding: 50px 70px;
+}
+.education .fa {
+  font-size: 60px;
+}
+.eduTiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.eduTiles div {
+  justify-self: center;
+  width: 24%;
+  height: 350px;
+  text-align: center;
+  margin: 20px 20px;
+  padding: 80px 80px;
+  background-color: #ebc10a;
+  box-shadow: 1px 1px 10px #bb9900;
+}
+.eduTiles div:hover {
+  /* cursor: pointer; */
+  box-shadow: 2px 2px 12px #a58700;
+}
+.eduTiles div i {
+  margin-bottom: 10px;
+}
+.eduTiles div h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.eduTiles div h3 i.fa {
+  font-size: 20px;
+}
+.eduTiles div h3 i.fa:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 800px) {
+  .education .fa {
+    font-size: 50px;
+  }
+  .eduTiles div h3 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .eduTiles div h2 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .eduTiles div {
+    padding: 40px 20px 40px 20px;
+    height: 200px;
+    flex: 1;
+    /* padding: 80px 100px; */
+  }
+}
+@media screen and (max-width: 1300px) {
+  .eduTiles div {
+    width: 40%;
+  }
+  .eduTiles div h3 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .eduTiles div h2 {
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+/*  */
+/* Works */
+/*  */
+.lowerRect {
+  overflow: hidden;
+  position: relative;
+  padding: 50px;
+  background-color: #551492;
+  color: white;
 }
 .flex_btn {
   width: 100%;
@@ -115,6 +204,8 @@ a {
   margin: 25px 40px;
   cursor: pointer;
   box-shadow: 1px 1px 10px #3b0072;
+  position: relative;
+  transition: scale 0.75s ease-in-out;
 }
 .flex_btn a i {
   width: 100%;
@@ -126,9 +217,16 @@ a {
   height: 60px;
 }
 .flex_btn a:hover {
-  background-color: #6200b3;
+  scale: 1.125;
+  background-color: #6000af;
   color: #ffffff;
   box-shadow: 2px 2px 12px #3b0072;
+}
+@media screen and (max-width: 700px) {
+  .flex_btn a {
+    flex: 1;
+    padding: 50px 40px;
+  }
 }
 /*  */
 /*  */
@@ -177,18 +275,56 @@ a {
   }
 } */
 /*  */
+/* Contact ME */
 /*  */
+.contactBar {
+  padding: 30px 0 40px 0;
+  text-align: center;
+  background-color: #cfab0a;
+  width: 100%;
+}
+.contactBar h2 {
+  padding: 20px 0;
+}
+.contactBar a i {
+  box-shadow: 1px 1px 10px #947900;
+  font-size: 60px;
+  margin: 10px 40px;
+  padding: 50px 60px;
+  color: #06254d;
+}
+.contactBar .fab,
+.contactBar .fas {
+  position: relative;
+  transition: scale 0.75s ease-in-out;
+}
+.contactBar .fab:hover,
+.contactBar .fas:hover {
+  scale: 1.1;
+  background-color: #06254d;
+  color: #cfab0a;
+  box-shadow: 2px 2px 12px #947900;
+}
+@media screen and (max-width: 700px) {
+  .contactBar a i {
+    padding: 50px 40px;
+    margin: 15px 20px;
+    font-size: 30px;
+  }
+}
+/*  */
+/* Leave a Comment */
 /*  */
 .commentTile {
-  background-color: #551492f3;
+  background-color: #551492;
   padding: 100px 0;
 }
 .comment {
-  width: 350px;
+  width: 400px;
   height: 400px;
   position: relative;
   padding: 30px 50px;
-  background-color: #551492f3;
+  background-color: #551492;
   color: white;
   box-shadow: 2px 2px 10px #3e0375f3;
   margin: auto;
@@ -234,30 +370,21 @@ a {
   margin: 10px 0px;
   padding: 10px 40px;
 }
+@media screen and (max-width: 700px) {
+  .comment {
+    width: 300px;
+    height: 400px;
+  }
+}
 /*  */
+/* Footer */
 /*  */
-/*  */
-.contactBar {
-  padding: 10px 0 40px 0;
-  text-align: center;
-  background-color: #cfab0a;
+.footer {
+  background-color: black;
+  color: white;
   width: 100%;
-}
-.contactBar h2 {
-  padding: 20px 0;
-}
-.contactBar a i {
-  box-shadow: 1px 1px 10px #947900;
-  font-size: 60px;
-  margin: 10px 40px;
-  padding: 50px 60px;
-  color: #06254d;
-}
-.contactBar .fab:hover,
-.contactBar .fas:hover {
-  background-color: #06254d;
-  color: #cfab0a;
-  box-shadow: 2px 2px 12px #947900;
+  height: 60vh;
+  text-align: center;
 }
 /*  */
 /* DropDown Menu */
@@ -295,7 +422,6 @@ a {
   display: none;
   background-color: #003a9260;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 0.5s ease-in-out;
 }
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -315,15 +441,6 @@ a {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
-}
-/* Aniimation of swipeUp */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 /*  */
 /*  */
