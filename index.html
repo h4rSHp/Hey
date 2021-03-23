@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- For AJAX -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -12,6 +13,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Sacramento&display=swap"rel="stylesheet">
+  <!--  -->
+  
+  
+  <!--  -->
   <title>Hey, I'm Harsh</title>
 </head>
 <body>
@@ -46,24 +51,24 @@
     </p>
   </div>
     <div class="education">
-      <div style="color: rgb(88, 88, 88);"><i class="fa fa-book" aria-hidden="true"></i></br>
+      <div style="color: rgb(88, 88, 88);">
         <h2 style="font-family: Oswald, sans-serif;">EDUCATION</h2>
       </div>
       <div class="eduTiles">
         <div>
           <i class="fa fa-building" aria-hidden="true"></i>
           <h2>CLASS X</h2>
-          <h3>Lucknow Public School, A-Block Rajajipuram, Lucknow <a href="https://www.lucknowpublicschoolsandcolleges.com/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h3>
+          <h3>Lucknow Public School<br>A-Block Rajajipuram<br>Lucknow  <a href="https://www.lucknowpublicschoolsandcolleges.com/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h3>
         </div>
         <div>
           <i class="fa fa-building" aria-hidden="true"></i>
           <h2>CLASS XII</h2>
-          <h3>Lucknow Public School, Madhoganj, Hardoi <a href="https://www.lucknowpublicschoolsandcolleges.com/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h3>
+          <h3>Lucknow Public School<br>Madhoganj<br>Hardoi  <a href="https://www.lucknowpublicschoolsandcolleges.com/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h3>
         </div>
         <div>
           <i class="fa fa-graduation-cap" aria-hidden="true"></i>
           <h2>UNDER GRADUATION</h2>
-          <h3>Indian Institute of Technology,Kanpur<a href="https://www.iitk.ac.in/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h3>
+          <h3>Indian Institute of Technology<br>Kanpur  <a href="https://www.iitk.ac.in/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h3>
         </div>
       </div>
     </div>
@@ -157,47 +162,5 @@
       </div>
   </div>
 </body>
-<script>
-
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-
-  function postToGoogle() {
-    var field1 = $("#commentText").val();
-    if (field1 == "") {
-      alert('Please Fill Your Name');
-      document.getElementById("commentText").focus();
-      return false;
-    }
-    $.ajax({
-      url: "https://docs.google.com/forms/d/e/1FAIpQLSdTtMRq9zB6nMZQNRvjDVtQrcPuOPbyvSNq3ggC6E31Fs5D4g/formResponse?",
-      data: { "entry.1486345417": field1 },
-      type: "POST",
-      dataType: "xml",
-      success: function (d) {
-      },
-      error: function (x) {
-        $('.success').fadeIn(750);
-        setTimeout(function () { $('.success').fadeOut(1000) }, 2000);
-      }
-    });
-    document.getElementById('commentText').value = "";
-    document.activeElement.blur();
-    return false;
-  }
-</script>
+<script src="style.js"></script>
 </html>
