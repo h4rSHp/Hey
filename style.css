@@ -97,23 +97,23 @@ a {
 .education {
   background-color: #ebc10a;
   text-align: center;
-  padding: 50px 70px;
 }
-.education .fa {
+
+.eduTiles div > i {
   font-size: 60px;
 }
 .eduTiles {
+  /* flex: 1; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  margin: auto 60px;
 }
 
 .eduTiles div {
-  justify-self: center;
-  width: 24%;
-  height: 350px;
+  flex: 1;
   text-align: center;
   margin: 20px 20px;
   padding: 80px 80px;
@@ -121,42 +121,41 @@ a {
   box-shadow: 1px 1px 10px #bb9900;
 }
 .eduTiles div:hover {
-  /* cursor: pointer; */
   box-shadow: 2px 2px 12px #a58700;
 }
 .eduTiles div i {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .eduTiles div h3 {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
   font-weight: 500;
 }
 .eduTiles div h3 i.fa {
   font-size: 20px;
+  animation: scale 1.2s ease-in-out infinite alternate;
 }
-.eduTiles div h3 i.fa:hover {
-  text-decoration: underline;
+/* .eduTiles div h3 i.fa:hover {
+} */
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
 }
+
 @media screen and (max-width: 800px) {
-  .education .fa {
-    font-size: 50px;
-  }
-  .eduTiles div h3 {
-    font-size: 14px;
-    font-weight: 300;
-  }
-  .eduTiles div h2 {
-    font-weight: 600;
-    font-size: 18px;
+  .eduTiles {
+    margin: auto 40px;
   }
   .eduTiles div {
-    padding: 40px 20px 40px 20px;
-    height: 200px;
+    padding: 40px 60px;
     flex: 1;
-    /* padding: 80px 100px; */
   }
 }
+/*
 @media screen and (max-width: 1300px) {
   .eduTiles div {
     width: 40%;
@@ -169,7 +168,7 @@ a {
     font-weight: 600;
     font-size: 16px;
   }
-}
+} */
 
 /*  */
 /* Works */
