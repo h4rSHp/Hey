@@ -1,5 +1,4 @@
-
-  function myFunction() {
+function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   // Close the dropdown menu if the user clicks outside of it
@@ -16,7 +15,6 @@
     }
   }
 // 
-// Submit Comment
 // 
   function postToGoogle() {
     var field1 = $("#commentText").val();
@@ -41,6 +39,8 @@
     document.activeElement.blur();
     return false;
   }
+// Submit Comment
+// 
   // 
 // Select all links with hashes
 $('a[href*="#"]')
@@ -78,4 +78,21 @@ $('a[href*="#"]')
       }
     }
   });
-
+  // 
+  // ScrollSpy
+  // 
+  // Select the buttons
+  $('.scrollSpy-content').click(function(event){
+    var buttonName = event.target.name;
+    //Using name to make Id
+    var ids = '#'+ buttonName;
+    var ht = $(ids).css("height");
+    $(ids).css({"height" : "0px","opacity":"0.4"});
+    $(ids).show(controlButton());
+    $(ids).animate({height: ht,opacity:1});
+    $('.scrollSpy-container').children().not(ids).hide();
+    function controlButton(){
+      $('.scrollSpy-content').css({"background":"rgba(0, 0, 0, 0.11)","color":"black"});
+    }
+    $(event.target).css({"background":"rgb(0,0,0)","color":"white"})
+  });
