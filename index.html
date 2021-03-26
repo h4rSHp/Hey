@@ -4,25 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- For AJAX -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- style.css File -->
   <link rel="stylesheet" href="style.css">
-  <!-- Awesome Font Import -->
+  <!-- Awesome Font Icons Import -->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <!-- Google FOnts Import -->
+  <!-- Google Fonts/Icons Import -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Sacramento&display=swap"rel="stylesheet">
-  <!-- W3-CSS -->
-  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-  <!-- Bootstrap 4.0 -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
   <!--  -->
   <title>Hey, I'm Harsh</title>
 </head>
@@ -56,7 +49,13 @@
     <p>Hi, I'm Harsh Patel and currently I'm studying Biological Science and Bioengineering in <a href="https://www.iitk.ac.in/">IIT Kanpur</a>. I'm in my second year and got amazed by various things but mostly interested in Design, Animation, Video Editing stuff and also in FrontEnd WebDev and UI/UX design. You can check some of my <a href="#Works">Works</a> below. If you like them or want to make any suggestion you can <a href="#Comment">Leave a comment</a>. If you want to reach me, you can <a href="#contactBar">Contact Me.</a>
     </p>
   </div>
-    <div class="education">
+  <div class="scrollSpy" id="scrollSpy">
+    <button class="scrollSpy-content" name="education">Education</button>
+    <button class="scrollSpy-content" name="skills">Skills</button>
+    <button class="scrollSpy-content" name="projects">Projects</button>
+  </div>
+      <div class="scrollSpy-container">
+    <div class="education" id="education">
       <div style="color: rgb(88, 88, 88);">
         <h2 style="font-family: Oswald, sans-serif; font-size: 32px;">EDUCATION</h2>
       </div>
@@ -81,7 +80,7 @@
     <!--  -->
     <!-- SKILLS -->
     <!--  -->
-    <div class="skills">
+    <div class="skills" id="skills">
       <h2 style="font-family: Oswald, sans-serif; font-size: 32px;color: rgb(88, 88, 88);">SKILLS</h2>
         <div class="flex-container-skill">
           <div class="designAnimation">
@@ -106,6 +105,10 @@
           </div>
       </div>
     </div>
+    <div class="projects" id="projects">
+      <h1>Projects</h1>
+    </div>
+  </div>
   <!--  -->
   <!-- Works -->
   <!--  -->
