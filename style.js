@@ -1,20 +1,13 @@
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdwns = document.getElementsByClassName("dropdwn-content");
-      var i;
-      for (i = 0; i < dropdwns.length; i++) {
-        var openDropdown = dropdwns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
+function myFunction(){
+  $('#myDropdown').slideToggle();
+    $(window).click(function(event){
+      if (!event.target.matches('.dropbtn')) {
+        $('#myDropdown').slideUp();
       }
-    }
-  }
+  })
+}
 // 
+// Comment
 // 
   function postToGoogle() {
     var field1 = $("#commentText").val();
@@ -41,7 +34,7 @@ function myFunction() {
   }
 // Submit Comment
 // 
-  // 
+  // FOR SMOOTH SCROLLING
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -96,3 +89,14 @@ $('a[href*="#"]')
     }
     $(event.target).css({"background":"rgb(0,0,0)","color":"white"})
   });
+  // 
+  // Go to Top | Arrow
+  // 
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    $('#arrow').fadeIn().show();
+  } else {
+    $('#arrow').fadeOut().hide();
+  }
+}
