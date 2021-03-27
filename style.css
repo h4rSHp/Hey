@@ -431,6 +431,35 @@ a {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 /*  */
+/* Go to Top Arrow */
+/*  */
+#arrow {
+  display: none;
+  background-color: none;
+  color: rgb(255, 255, 255);
+  padding: 12px;
+  border: none;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  transform: rotate(270deg);
+  box-shadow: 1px 1px 10px rgb(26, 26, 26);
+  transition: scale 0.5s ease-in-out;
+}
+#arrow:hover {
+  scale: 1.15;
+}
+#arrow:hover {
+  box-shadow: 2px 2px 12px rgb(0, 0, 0);
+}
+@media screen and (max-width: 600px) {
+  #arrow {
+    padding: 8px;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+/*  */
 /* Dropdown Menu */
 /*  */
 .dropbtn {
@@ -480,11 +509,6 @@ a {
   color: white;
   background-color: #003a927c;
   box-shadow: 1px 1px 12px rgba(0, 37, 139, 0.473);
-}
-
-/* Show the dropdwn menu (use JS to add this class to the .dropdwn-content container when the user clicks on the dropdwn button) */
-.show {
-  display: block;
 }
 /*  */
 /*  */
