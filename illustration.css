@@ -13,12 +13,23 @@ a {
 }
 /*  */
 /*  */
+.copyright {
+  padding-bottom: 60px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(to bottom, rgb(87, 87, 87), black);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* animation: colorChange 20s ease-in-out infinite alternate; */
+}
+/*  */
+/*  */
 .container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   background-color: rgb(252, 186, 6);
   animation: colorChange 20s ease-in-out infinite alternate;
+  padding-top: 50px;
 }
 @keyframes colorChange {
   0% {
@@ -42,19 +53,20 @@ a {
   max-height: 100vh;
 }
 .element img:hover {
-  cursor: pointer;
-  box-shadow: 2px 2px 8px black;
+  /* cursor: pointer; */
+  box-shadow: 1px 1px 12px black;
 }
 /*  */
 /*  */
 /*  */
 #downloadArrow {
+  background-color: rgba(0, 132, 150, 0.589);
   width: 100%;
   cursor: pointer;
   padding: 5px;
 }
 #downloadArrow:hover {
-  background-color: rgba(0, 0, 0, 0.349);
+  background-color: rgba(28, 182, 202, 0.349);
   color: white;
 }
 #downloadContent {
@@ -62,7 +74,7 @@ a {
 }
 .download {
   text-align: center;
-  color: black;
+  color: rgb(255, 255, 255);
   position: fixed;
   top: 0;
   width: 100%;
@@ -74,13 +86,13 @@ a {
   background: none;
   padding: 12px 18px;
   margin: 5px 10px 0 10px;
-  background: rgb(48, 48, 47);
+  background: rgba(19, 185, 14, 0.699);
   color: white;
 }
 .download button:hover {
-  box-shadow: 2px 0px 5px rgb(0, 0, 0);
+  box-shadow: 1px 1px 8px rgba(0, 41, 2, 0.87);
   color: rgb(255, 255, 255);
-  background: black;
+  background: rgba(0, 150, 62, 0.384);
   border: none;
 }
 @media screen and (max-width: 1000px) {
@@ -94,23 +106,23 @@ a {
 }
 /*  */
 /*  */
+/*  */
 #arrow {
-  display: block;
-  background-color: rgb(34, 34, 34);
+  display: none;
+  background-color: none;
   color: rgb(255, 255, 255);
   padding: 15px;
   border: none;
-  border-radius: 100px;
   position: fixed;
   right: 50px;
   bottom: 50px;
-  transform: rotate(90deg);
-  box-shadow: 1px 1px 8px rgb(26, 26, 26);
+  transform: rotate(270deg);
+  box-shadow: 1px 1px 10px rgb(26, 26, 26);
   transition: scale 0.5s ease-in-out;
 }
 #arrow:hover {
   scale: 1.1;
 }
 #arrow:hover {
-  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+  box-shadow: 1.5px 1.5px 12px rgb(0, 0, 0);
 }
