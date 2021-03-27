@@ -7,11 +7,13 @@
     <title>Illustrations</title>
     <link rel="stylesheet" href="illustration.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- For AJAX JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
         <div class="download" id="top">
-            <div id = "downloadArrow" onclick="changeDisplay()">
+            <div id = "downloadArrow">
                 <span class = "material-icons" id="downloadArrowIcon" style="font-size : 35px;">file_download</span>
             </div>
             <div id = "downloadContent">
@@ -20,15 +22,7 @@
                 <a href="#" title="Download all images in ZIP" ><button style="cursor: no-drop;">Download ZIP</button></a>
             </div>
         </div>
-        <!--  -->
-        <!-- Back to Top -->
-        <!--  -->
-        <a href="#top" id="arrow" title="Go to top">
-            <i class="material-icons arrow">
-                reply_all
-            </i>
-        </a>
-        <div class="container">
+        <div class="container" id="container">
             <div class="element">
                 <img src="illustration/AddFriends.png">
             </div>
@@ -54,6 +48,17 @@
                 <img src="illustration/Logo.png">
             </div>
         </div>
+        <!--  -->
+        <!--  -->
+            <div class="copyright">Copyright &#169 Harsh Patel 2021</div>
+        <!--  -->
+        <!-- Back to Top -->
+        <!--  -->
+        <a href="#container" id="arrow" title="Go to top">
+            <i class="material-icons arrow">
+                double_arrow
+            </i>
+        </a>
 </body>
 
 <script src="illustrationStyle.js"></script>
