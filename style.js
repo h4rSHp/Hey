@@ -1,3 +1,18 @@
+// 
+// Loading Animation
+// 
+$(document).ready(function() {
+  $('.main-wrapper').hide();
+    setTimeout(function(){
+      $('.main-wrapper').show();
+    }, 2000);
+    setTimeout(function(){
+      $('.animationContainer').hide();
+    }, 2500);
+});
+// 
+// Dropdown Menu
+// 
 function myFunction(){
   $('#myDropdown').slideToggle();
     $(window).click(function(event){
@@ -7,7 +22,7 @@ function myFunction(){
   })
 }
 // 
-// Comment
+// Comment / Submit Comment
 // 
   function postToGoogle() {
     var field1 = $("#commentText").val();
@@ -32,7 +47,7 @@ function myFunction(){
     document.activeElement.blur();
     return false;
   }
-// Submit Comment
+//
 // 
   // FOR SMOOTH SCROLLING
 // Select all links with hashes
