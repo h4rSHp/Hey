@@ -107,11 +107,28 @@ $('a[href*="#"]')
   // 
   // Go to Top | Arrow
   // 
+$(document).ready(function(){
+    if(screen.width < 650){
+      $('.navbar').hide();
+      $('#dropdwn').show();
+    }
+    else{
+      $('#dropdwn').hide();
+    }
+  });
   window.onscroll = function() {scrollFunction()};
   function scrollFunction() {
-  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
     $('#arrow').fadeIn().show();
+    if(screen.width > 650){
+      $('#dropdwn').fadeIn().show();
+      $('.navbar').fadeOut().hide();
+    }
   } else {
     $('#arrow').fadeOut().hide();
+    if(screen.width() > 650){
+      $('#dropdwn').fadeOut().hide();
+      $('.navbar').fadeIn().show();
+    }
   }
 }
