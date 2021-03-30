@@ -105,7 +105,7 @@ $('a[href*="#"]')
     $(event.target).css({"background":"rgb(0,0,0)","color":"white"})
   });
   // 
-  // Go to Top | Arrow
+  // Go to Top | Arrow | Navbar | Dropdown
   // 
 $(document).ready(function(){
     if(screen.width < 650){
@@ -113,6 +113,7 @@ $(document).ready(function(){
       $('#dropdwn').show();
     }
     else{
+      $('.navbar').show();
       $('#dropdwn').hide();
     }
   });
@@ -124,9 +125,10 @@ $(document).ready(function(){
       $('#dropdwn').fadeIn().show();
       $('.navbar').fadeOut().hide();
     }
-  } else {
+  } 
+  else {
     $('#arrow').fadeOut().hide();
-    if(screen.width() > 650){
+    if(screen.width > 650){
       $('#dropdwn').fadeOut().hide();
       $('.navbar').fadeIn().show();
     }
