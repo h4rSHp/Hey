@@ -341,8 +341,8 @@ ul {
   overflow: hidden;
   position: relative;
   padding: 50px;
-  /* background-image: url("7b0c349295dcd8684bacee111667b49c.jpg"); */
-  background-image: url(IMG_8811.JPG);
+/*   background-image: url("7b0c349295dcd8684bacee111667b49c.jpg"); */
+  background-image: url("IMG_8811.JPG");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
