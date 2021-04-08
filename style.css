@@ -11,6 +11,9 @@ body {
 a {
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
 /*  */
 /* Loding Animation */
 /*  */
@@ -119,15 +122,14 @@ a {
     opacity: 0;
   }
 }
+.main-wrapper {
+  display: none;
+}
 /*  */
 /* Front Image and Name  */
 /*  */
 .img_rect {
-  background: linear-gradient(
-    to bottom,
-    rgba(9, 32, 73, 0.9),
-    rgba(9, 32, 73, 0.4)
-  );
+  background: #00458591;
 }
 .header {
   text-align: center;
@@ -145,7 +147,7 @@ a {
 }
 .header .intro #line {
   margin: auto;
-  background-color: #ebc10a;
+  background-color: #ca7c2a;
 }
 .header .img,
 .header .intro {
@@ -185,15 +187,19 @@ a {
   font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: 1000;
-  color: #06254d;
+  color: #ffffff;
   margin-bottom: 50px;
 }
 .introduction {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 25px;
-  background-color: #ebc10a;
+  color: rgb(255, 255, 255);
+  background: rgb(39, 39, 39);
   padding: 70px 60px;
   text-align: center;
+}
+.introduction a {
+  color: #ad0a0a;
 }
 .introduction p a:hover {
   text-decoration: underline;
@@ -207,44 +213,18 @@ a {
   }
 }
 /*  */
-/*  */
-/*  */
-.scrollSpy {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  background-color: #ebc10a;
-  justify-content: center;
-  padding: 30px;
-}
-.scrollSpy button {
-  border: none;
-  background: rgba(0, 0, 0, 0.11);
-  margin: 5px;
-  padding: 10px 20px;
-}
-.scrollSpy button:hover {
-  cursor: pointer;
-  background-color: black;
-  color: white;
-}
-.scrollSpy :first-child {
-  background: black;
-  color: white;
-}
-/*  */
 /* Education */
 /*  */
 .education {
-  background-color: #ebc10a;
+  background: rgb(39, 39, 39);
   text-align: center;
+  padding-bottom: 70px;
 }
 
 .eduTiles div > i {
   font-size: 60px;
 }
 .eduTiles {
-  /* flex: 1; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -258,16 +238,20 @@ a {
   text-align: center;
   margin: 20px 20px;
   padding: 80px 80px;
-  background-color: #ebc10a;
-  box-shadow: 1px 1px 10px #bb9900;
+  background-color: transparent;
+  box-shadow: 1px 1px 10px #0000007e;
 }
 .eduTiles div:hover {
-  box-shadow: 2px 2px 12px #a58700;
+  box-shadow: 1px 1px 15px #0000009c;
 }
 .eduTiles div i {
   margin-bottom: 5px;
 }
+.eduTiles div h2 {
+  color: white;
+}
 .eduTiles div h3 {
+  color: white;
   text-align: center;
   margin-top: 5px;
   font-weight: 500;
@@ -305,9 +289,9 @@ a {
 /* Skills */
 /*  */
 .skills {
-  display: none;
-  background-color: #ebc10a;
+  background: rgb(39, 39, 39);
   text-align: center;
+  color: white;
 }
 .flex-container-skill {
   display: flex;
@@ -320,8 +304,12 @@ a {
   width: 250px;
   margin: 20px 20px;
   padding: 50px;
-  box-shadow: 1px 1px 10px #a58700;
+  box-shadow: 1px 1px 8px #000000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.designAnimation:hover,
+.webDev:hover {
+  box-shadow: 1px 1px 12px black;
 }
 .designAnimation p,
 .webDev p {
@@ -329,14 +317,16 @@ a {
 }
 .designAnimation p:first-child,
 .webDev p:first-child {
-  font-size: 28px;
-  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-size: 40px;
+  margin-bottom: 16px;
 }
 /*  */
 /* Projects */
 /*  */
 .projects {
-  display: none;
+  background: rgb(39, 39, 39);
+  color: white;
 }
 /*  */
 /* Works */
@@ -345,13 +335,13 @@ a {
   overflow: hidden;
   position: relative;
   padding: 50px;
-  background: linear-gradient(to top, #2d0453, #551492);
-  /* background-color: #551492; */
+  background-image: url("Images/artem-militonian-UYW6FZLlnL8-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: cover;
   color: white;
 }
 .flex_btn {
   width: 100%;
-  /* background-color: #ebc10a; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -371,7 +361,7 @@ a {
   padding: 60px 50px;
   margin: 25px 40px;
   cursor: pointer;
-  box-shadow: 1px 1px 12px #2f005c;
+  box-shadow: 1.5px 1.5px 15px #002c41;
   position: relative;
   transition: scale 0.75s ease-in-out;
 }
@@ -388,7 +378,7 @@ a {
   scale: 1.125;
   background-color: transparent;
   color: #ffffff;
-  box-shadow: 2px 2px 12px #250047;
+  box-shadow: 2px 2px 20px #002c41;
 }
 @media screen and (max-width: 700px) {
   .flex_btn a {
@@ -397,28 +387,59 @@ a {
   }
 }
 /*  */
+/* Blog */
+/*  */
+.blog-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: rgb(39, 39, 39);
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 12px black;
+}
+.blog-wrapper p {
+  width: 70%;
+  font-size: 30px;
+  font-family: "Anton", sans-serif;
+  align-self: center;
+  /* font-family: "Zilla Slab Highlight", cursive; */
+}
+.blog-wrapper p a {
+  color: #ad0a0a;
+  text-decoration: underline;
+  margin: 40px auto;
+}
+.blog-wrapper iframe {
+  margin: 40px auto;
+  border-radius: 20px;
+  width: 80%;
+  height: 70vh;
+}
+/*  */
 /* Footer */
 /*  */
 .footer {
-  background: linear-gradient(to bottom, rgba(80, 80, 80, 1), rgba(0, 0, 0, 1));
+  background: linear-gradient(to bottom, rgb(40, 40, 40), black);
   color: white;
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  text-align: center;
 }
 @media screen and (min-width: 900px) {
   .footer {
     padding: 90px;
     display: grid;
+    grid-template-columns: 60% 40%;
   }
   .comment {
     box-shadow: none;
-    grid-column: 5/12;
   }
   .contactBar {
     width: 80%;
-    grid-column: 1/5;
   }
 }
 /*  */
@@ -428,6 +449,12 @@ a {
   margin-top: 20px;
   padding: 30px 0 40px 0;
   text-align: center;
+}
+.contactTiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .contactBar h2 {
   padding: 20px 0;
@@ -467,13 +494,12 @@ a {
   height: 400px;
   position: relative;
   padding: 30px 50px;
-  /* background-color: rgb(48, 48, 48); */
   color: white;
   box-shadow: 2px 2px 10px rgb(0, 0, 0);
   margin: auto;
 }
 .comment_form {
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -485,6 +511,17 @@ a {
   border: transparent;
   margin: 10px 20px;
   padding: 10px 40px;
+  position: relative;
+}
+.inputs::before {
+  position: absolute;
+  content: "*";
+  color: rgb(255, 0, 0);
+  font-size: large;
+  font-style: italic;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
 }
 .comment_form input[type="submit"] {
   border: none;
@@ -531,11 +568,13 @@ a {
 /*  */
 /*  */
 .copyright {
-  padding-bottom: 60px;
-  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #000000;
   color: white;
-  text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 40px;
 }
 /*  */
 /* Go to Top Arrow */
@@ -569,21 +608,27 @@ a {
 /*  */
 /* Dropdown Menu */
 /*  */
+.dropdown-bar {
+  display: flex;
+  /* background: rgb(39, 39, 39); */
+  background: rgb(26, 26, 26);
+}
 .dropbtn {
-  width: 100%;
-  background: linear-gradient(to bottom, #127dc48f, #127dc400);
+  background: transparent;
   color: rgb(255, 255, 255);
   padding: 16px;
-  font-size: 16px;
+  font-size: 24px;
+  margin: 0px;
   border: none;
   cursor: pointer;
+  position: absolute;
+  right: 16px;
 }
-
 /* Dropdown button on hover & focus */
 .dropbtn:hover,
 .dropbtn:focus {
   border: none;
-  background: linear-gradient(to bottom, #00508691, #00508600);
+  background: rgb(22, 22, 22);
   cursor: pointer;
 }
 
@@ -600,11 +645,12 @@ a {
 /* Dropdown Content (Hidden by Default) */
 .dropdwn-content {
   display: none;
-  background: linear-gradient(to top, #003a9260, #003a924b);
+  background: rgb(39, 39, 39);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 /* Links inside the dropdwn */
 .dropdwn-content a {
+  border-bottom: 1px solid rgb(50, 50, 50);
   text-align: center;
   color: white;
   padding: 12px 16px;
@@ -614,14 +660,15 @@ a {
 /* Change color of dropdwn links on hover */
 .dropdwn-content a:hover {
   color: white;
-  background-color: #003a927c;
-  box-shadow: 1px 1px 12px rgba(0, 37, 139, 0.473);
+  background: black;
 }
 /*  */
+/* Navbar */
 /*  */
 .navbar-content ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   float: right;
 }
 .navbar {
@@ -629,26 +676,44 @@ a {
   position: fixed;
   top: 0;
   height: auto;
-  background: linear-gradient(
-    to bottom,
-    rgba(9, 32, 73, 0.7),
-    rgba(9, 32, 73, 0)
-  );
+  background: rgb(31, 31, 31);
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
-.navbar li {
-  padding: 16px 1px;
-  margin: 0 5px;
+.navbar li,
+.name {
+  margin: 10px;
 }
-.navbar li a {
+.navbar li a,
+.name a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: "Baumans", cursive;
   font-weight: 400;
   letter-spacing: 2px;
-  padding: 13px 15px;
   color: white;
   transition: border 0.75s ease;
-  border-bottom: 3.5px solid rgba(16, 157, 223, 0);
+  /* border-bottom: 3.5px solid rgba(16, 157, 223, 0); */
 }
 .navbar li a:hover {
-  color: #ebc10a;
-  border-bottom: 3.5px solid rgb(91, 8, 245);
+  color: #c5c5c5;
+}
+.navbar ul {
+  margin-top: 10px;
+  margin-right: 100px;
+}
+.navbar span,
+.dropdwn span {
+  color: rgb(255, 0, 0);
+  font-size: 32px;
+}
+.name {
+  font-weight: 2000;
+  font-size: 22px;
+  color: #ca7c2a;
+  float: left;
+  /* margin-right: 100px; */
+  margin-left: 100px;
+  /* border-bottom: 3.5px solid #ca7c2a; */
 }
 /*# sourceMappingURL=style.css.map */
