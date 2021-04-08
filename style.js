@@ -111,16 +111,8 @@ $(document).ready(function(){
   function scrollFunction() {
   if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
     $('#arrow').fadeIn().show();
-    // if(screen.width > 650){
-    //   $('#dropdwn').fadeIn().show();
-    //   $('.navbar').fadeOut().hide();
-    // }
   } 
   else {
     $('#arrow').fadeOut().hide();
-    // if(screen.width > 650){
-    //   $('#dropdwn').fadeOut().hide();
-    //   $('.navbar').fadeIn().show();
-    // }
   }
 }
