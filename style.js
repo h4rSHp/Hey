@@ -5,10 +5,10 @@ $(document).ready(function() {
   $('.main-wrapper').hide();
     setTimeout(function(){
       $('.main-wrapper').show();
-    }, 2000);
+    }, 1000);
     setTimeout(function(){
       $('.animationContainer').hide();
-    }, 2500);
+    }, 1500);
 });
 // 
 // Dropdown Menu
@@ -26,14 +26,20 @@ function myFunction(){
 // 
   function postToGoogle() {
     var field1 = $("#commentText").val();
+    var field2 = $('#nameText').val();
     if (field1 == "") {
-      alert('Please Fill Your Name');
+      alert('Please fill the Comment');
       document.getElementById("commentText").focus();
       return false;
     }
+    if(field2 == ""){
+					alert('Please Fill Your Name');
+					document.getElementById("nameText").focus();
+					return false;
+				}
     $.ajax({
       url: "https://docs.google.com/forms/d/e/1FAIpQLSdTtMRq9zB6nMZQNRvjDVtQrcPuOPbyvSNq3ggC6E31Fs5D4g/formResponse?",
-      data: { "entry.1486345417": field1 },
+      data: { "entry.1486345417": field1, "entry.15102802":field2 },
       type: "POST",
       dataType: "xml",
       success: function (d) {
@@ -44,12 +50,14 @@ function myFunction(){
       }
     });
     document.getElementById('commentText').value = "";
+    document.getElementById('nameText').value = "";
     document.activeElement.blur();
     return false;
   }
 //
 // 
   // FOR SMOOTH SCROLLING
+// 
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -87,24 +95,6 @@ $('a[href*="#"]')
     }
   });
   // 
-  // ScrollSpy
-  // 
-  // Select the buttons
-  $('.scrollSpy-content').click(function(event){
-    var buttonName = event.target.name;
-    //Using name to make Id
-    var ids = '#'+ buttonName;
-    var ht = $(ids).css("height");
-    $(ids).css({"height" : "0px","opacity":"0.4"});
-    $(ids).show(controlButton());
-    $(ids).animate({height: ht,opacity:1});
-    $('.scrollSpy-container').children().not(ids).hide();
-    function controlButton(){
-      $('.scrollSpy-content').css({"background":"rgba(0, 0, 0, 0.11)","color":"black"});
-    }
-    $(event.target).css({"background":"rgb(0,0,0)","color":"white"})
-  });
-  // 
   // Go to Top | Arrow | Navbar | Dropdown
   // 
 $(document).ready(function(){
@@ -121,16 +111,16 @@ $(document).ready(function(){
   function scrollFunction() {
   if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
     $('#arrow').fadeIn().show();
-    if(screen.width > 650){
-      $('#dropdwn').fadeIn().show();
-      $('.navbar').fadeOut().hide();
-    }
+    // if(screen.width > 650){
+    //   $('#dropdwn').fadeIn().show();
+    //   $('.navbar').fadeOut().hide();
+    // }
   } 
   else {
     $('#arrow').fadeOut().hide();
-    if(screen.width > 650){
-      $('#dropdwn').fadeOut().hide();
-      $('.navbar').fadeIn().show();
-    }
+    // if(screen.width > 650){
+    //   $('#dropdwn').fadeOut().hide();
+    //   $('.navbar').fadeIn().show();
+    // }
   }
 }
