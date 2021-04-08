@@ -129,7 +129,9 @@ ul {
 /* Front Image and Name  */
 /*  */
 .img_rect {
-  background: #00458591;
+  background-color: #1a1a1a;
+  background-color: rgb(39, 39, 39);
+  background: #00363d98;
 }
 .header {
   text-align: center;
@@ -147,7 +149,7 @@ ul {
 }
 .header .intro #line {
   margin: auto;
-  background-color: #ca7c2a;
+  background-color: #f8cf2c;
 }
 .header .img,
 .header .intro {
@@ -232,7 +234,6 @@ ul {
   margin-top: 20px;
   margin: auto 60px;
 }
-
 .eduTiles div {
   flex: 1;
   text-align: center;
@@ -259,6 +260,8 @@ ul {
 .eduTiles div h3 i.fa {
   font-size: 20px;
   animation: scale 1.2s ease-in-out infinite alternate;
+  color: #ad0a0a;
+  /* background-color: #f8cf2c; */
 }
 @keyframes scale {
   0% {
@@ -321,6 +324,9 @@ ul {
   font-size: 40px;
   margin-bottom: 16px;
 }
+.skills p span {
+  cursor: pointer;
+}
 /*  */
 /* Projects */
 /*  */
@@ -335,7 +341,9 @@ ul {
   overflow: hidden;
   position: relative;
   padding: 50px;
-  background-image: url("Images/artem-militonian-UYW6FZLlnL8-unsplash.jpg");
+  /* background-image: url("7b0c349295dcd8684bacee111667b49c.jpg"); */
+  background-image: url(IMG_8811.JPG);
+  background-position: center;
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -356,12 +364,12 @@ ul {
 }
 .flex_btn a {
   background-color: transparent;
-  color: #ffffff;
+  color: #335155;
   font-size: 18px;
   padding: 60px 50px;
   margin: 25px 40px;
   cursor: pointer;
-  box-shadow: 1.5px 1.5px 15px #002c41;
+  box-shadow: 1.5px 1.5px 15px #dd9700;
   position: relative;
   transition: scale 0.75s ease-in-out;
 }
@@ -377,8 +385,8 @@ ul {
 .flex_btn a:hover {
   scale: 1.125;
   background-color: transparent;
-  color: #ffffff;
-  box-shadow: 2px 2px 20px #002c41;
+  color: #335155;
+  box-shadow: 2px 2px 20px #dd9700;
 }
 @media screen and (max-width: 700px) {
   .flex_btn a {
@@ -389,7 +397,7 @@ ul {
 /*  */
 /* Blog */
 /*  */
-.blog-wrapper {
+/* .blog-wrapper {
   padding-top: 40px;
   padding-bottom: 40px;
   background: rgb(39, 39, 39);
@@ -407,7 +415,7 @@ ul {
   font-family: "Anton", sans-serif;
   align-self: center;
   /* font-family: "Zilla Slab Highlight", cursive; */
-}
+/* }
 .blog-wrapper p a {
   color: #ad0a0a;
   text-decoration: underline;
@@ -418,7 +426,7 @@ ul {
   border-radius: 20px;
   width: 80%;
   height: 70vh;
-}
+} */
 /*  */
 /* Footer */
 /*  */
@@ -535,8 +543,8 @@ ul {
 }
 .comment_form input[type="text"]:focus {
   border: transparent;
-  background-color: rgba(131, 131, 131, 0.767);
-  color: white;
+  background-color: #f8cf2c;
+  color: black;
 }
 .comment_form input[type="text"] {
   padding-left: 50px;
@@ -644,6 +652,7 @@ ul {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdwn-content {
+  font-family: "Baumans", cursive;
   display: none;
   background: rgb(39, 39, 39);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -706,14 +715,18 @@ ul {
 .dropdwn span {
   color: rgb(255, 0, 0);
   font-size: 32px;
+  /* transition: transform 1s ease; */
 }
 .name {
   font-weight: 2000;
   font-size: 22px;
   color: #ca7c2a;
   float: left;
-  /* margin-right: 100px; */
   margin-left: 100px;
-  /* border-bottom: 3.5px solid #ca7c2a; */
 }
+/* .navbar span:hover,
+.dropdwn span:hover {
+  transform: rotateZ(360deg);
+} */
+
 /*# sourceMappingURL=style.css.map */
