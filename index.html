@@ -1,265 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- For AJAX -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- style.css File -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For AJAX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- style.css File -->
+    <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="styling.css"> -->
-  <!-- Awesome Font Icons Import -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <!-- Google Fonts/Icons Import -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Sacramento&display=swap"rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Zilla+Slab+Highlight:wght@700&display=swap"
-    rel="stylesheet">
-  <!--  -->
-  <title>Hey, I'm Harsh</title>
+    <!-- Awesome Font Icons Import -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Google Fonts/Icons Import -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
+    <!--  -->
+    <title>Hey, I'm Harsh</title>
 </head>
+
 <body>
-  <!--  -->
-  <!-- Loader Animation  -->
-  <!--  -->
-  <div class="animationContainer">
-    <div class="wrapper">
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="shadow"></div>
-      <div class="shadow"></div>
-      <div class="shadow"></div>
-      <span>Loading...</span>
+    <!--  -->
+    <!-- Loader Animation  -->
+    <!--  -->
+    <div class="animationContainer">
+        <div class="wrapper">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <span>Loading<span>.</span><span>.</span><span>.</span></span>
+        </div>
     </div>
-  </div>
-  <!--  -->
-  <!-- Front Image and Title -->
-  <!--  -->
-  <div class="main-wrapper">
-    <div class="header" id="header" style="overflow: hidden; text-align: center;">
-      <div class="img_rect" 
-        style="height: 100vh;
+    <!--  -->
+    <!-- Front Image and Title -->
+    <!--  -->
+    <div class="main-wrapper">
+        <div class="header" id="header" style="overflow: hidden; text-align: center;">
+            <div class="img_rect" style="height: 100vh;
             max-width: 100%;
-            text-align: center;"
-          >
-        <div class="img" style="text-align: center;">
-          <img src="Images/IMG_8217.jpg" alt="Image does not exist" class="bg_image" style="max-width: 1920px;">
+            text-align: center;">
+                <div class="img" style="text-align: center;">
+                    <img src="Images/IMG_8217.jpg" alt="Image does not exist" class="bg_image" style="max-width: 1920px;">
+                </div>
+                <div class="intro">
+                    <p style="font-family: 'Caveat',cursive;">Hey, <span style="color: rgb(243, 220, 13);"> I'm</span></p>
+                    <h3><span>H</span><span>A</span><span>R</span><span>S</span><span>H</span></h3>
+                    <h1><span>P</span><span>A</span><span>T</span><span>E</span><span>L</span></h1>
+                    <div style="width: 100px; height: 4px; margin-top: 30px;" id="line"></div>
+                </div>
+            </div>
         </div>
-        <div class="intro">
-          <p style="font-family: 'Caveat',cursive;">Hey,  <span style="color: rgb(243, 220, 13);"> I'm</span></p>
-          <h3>HARSH</h3>
-          <h1>PATEL</h1>
-          <div style="width: 100px; height: 4px; margin-top: 30px;" id="line"></div>
+        <!--  -->
+        <!--  -->
+        <div class="introduction" id="aboutMe">
+            <div class="aboutMeHeading">
+                <h2>ABOUT ME</h2>
+            </div>
+            <p>Hi, I'm Harsh Patel and currently I'm studying Biological Science and Bioengineering in <a href="https://www.iitk.ac.in/">IIT Kanpur</a>. I'm in my second year and got amazed by various things but mostly interested in Design, Animation, Video
+                Editing stuff and also in FrontEnd WebDev and UI/UX design. You can check some of my <a href="#Works">Works</a> below. If you like them or want to make any suggestion you can <a href="#Comment">Leave a comment</a>. If you want to reach
+                me, you can <a href="#contactBar">Contact Me.</a>
+            </p>
         </div>
-      </div>
-    </div>
-    <!--  -->
-    <!--  -->
-    <div class="introduction" id="aboutMe">
-      <div class="aboutMeHeading">
-        <h2>ABOUT ME</h2>
-      </div>
-      <p>Hi, I'm Harsh Patel and currently I'm studying Biological Science and Bioengineering in <a href="https://www.iitk.ac.in/">IIT Kanpur</a>. I'm in my second year and got amazed by various things but mostly interested in Design, Animation, Video Editing stuff and also in FrontEnd WebDev and UI/UX design. You can check some of my <a href="#Works">Works</a> below. If you like them or want to make any suggestion you can <a href="#Comment">Leave a comment</a>. If you want to reach me, you can <a href="#contactBar">Contact Me.</a>
-      </p>
-    </div>
         <div class="scrollSpy-container">
-      <div class="education" id="education">
-        <div style="color: rgb(255, 255, 255);">
-          <h2 style="font-family: Oswald, sans-serif; font-size: 32px;">EDUCATION</h2>
-        </div>
-        <div class="eduTiles">
-          <div>
-            <h2>CLASS X</h2>
-            <h3>Lucknow Public School,<br>A-Block Rajajipuram<br>Lucknow<br>(ICSE)  <a href="https://www.lucknowpublicschoolsandcolleges.com/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h3>
-          </div>
-          <div>
-            <h2>CLASS XII</h2>
-            <h3>Lucknow Public School,<br>Madhoganj<br>Hardoi<br>(CBSE)  <a href="https://www.lucknowpublicschoolsandcolleges.com/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h3>
-          </div>
-          <div>
-            <h2>UNDER GRADUATION</h2>
-            <h3>Indian Institute of Technology,<br>Kanpur<br>B.Tech<br>Biological Science and Bioengineering  <a href="https://www.iitk.ac.in/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h3>
-          </div>
-        </div>
-      </div>
-      <!--  -->
-      <!-- SKILLS -->
-      <!--  -->
-      <div class="skills" id="skills">
-        <h2 style="font-family: Oswald, sans-serif; font-size: 32px;color: rgb(255, 255, 255);">SKILLS</h2>
-          <div class="flex-container-skill">
-            <div class="designAnimation">
-              <p style="font-size: large;font-weight: 700;">Design and Animation</span>
-              <p style="color: #ad0a0a;">Adobe Illustrator</p>
-              <p style="color: #ad0a0a;">Adobe Premiere</p>
-              <p style="color: #F8CF2C;">Adobe After Effects</p>
-              <p style="color: #F8CF2C;">Adobe Photoshop</p>
-              <p style="color: #0a7721;">Cinema 4D</p>
+            <div class="education" id="education">
+                <div style="color: rgb(255, 255, 255);">
+                    <h2 style="font-family: Oswald, sans-serif; font-size: 32px;">EDUCATION</h2>
+                </div>
+                <div class="eduTiles">
+                    <div class="fade-in">
+                        <h2>CLASS X</h2>
+                        <h3>Lucknow Public School,<br>A-Block Rajajipuram<br>Lucknow<br>(ICSE) <a href="https://www.lucknowpublicschoolsandcolleges.com/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h3>
+                    </div>
+                    <div class="fade-in">
+                        <h2>CLASS XII</h2>
+                        <h3>Lucknow Public School,<br>Madhoganj<br>Hardoi<br>(CBSE) <a href="https://www.lucknowpublicschoolsandcolleges.com/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h3>
+                    </div>
+                    <div class="fade-in">
+                        <h2>UNDER GRADUATION</h2>
+                        <h3>Indian Institute of Technology,<br>Kanpur<br>B.Tech<br>Biological Science and Bioengineering <a href="https://www.iitk.ac.in/"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h3>
+                    </div>
+                </div>
             </div>
-            <div class="webDev">
-              <p style="font-size: large;font-weight: 700;">FrontEnd WebDev</p>
-              <p style="color: #ad0a0a;">HTML</p>
-              <p style="color: #ad0a0a;">CSS </p>
-              <p style="color: #F8CF2C;">SASS</p>
-              <p style="color: #ad0a0a;">JavaScript</p>
-              <p style="color: #ad0a0a;">JQuery</p>
-              <p style="color: #ad0a0a;">Bootstrap</p>
-              <p style="color: #ad0a0a;">ReactJS</p>
-              <p style="color: #F8CF2C;">Figma</p>
+            <!--  -->
+            <!-- SKILLS -->
+            <!--  -->
+            <div class="skills" id="skills">
+                <h2 style="font-family: Oswald, sans-serif; font-size: 32px;color: rgb(255, 255, 255);">SKILLS</h2>
+                <div class="flex-container-skill fade-in">
+                    <div class="designAnimation">
+                        <p style="font-size: large;font-weight: 700;">Design and Animation</span>
+                            <p style="color: #ad0a0a;">Adobe Illustrator</p>
+                            <p style="color: #ad0a0a;">Adobe Premiere</p>
+                            <p style="color: #F8CF2C;">Adobe After Effects</p>
+                            <p style="color: #F8CF2C;">Adobe Photoshop</p>
+                            <p style="color: #0a7721;">Cinema 4D</p>
+                    </div>
+                    <div class="webDev fade-in">
+                        <p style="font-size: large;font-weight: 700;">FrontEnd WebDev</p>
+                        <p style="color: #ad0a0a;">HTML</p>
+                        <p style="color: #ad0a0a;">CSS </p>
+                        <p style="color: #F8CF2C;">SASS</p>
+                        <p style="color: #ad0a0a;">JavaScript</p>
+                        <p style="color: #ad0a0a;">JQuery</p>
+                        <p style="color: #ad0a0a;">Bootstrap</p>
+                        <p style="color: #ad0a0a;">ReactJS</p>
+                        <p style="color: #F8CF2C;">Figma</p>
+                    </div>
+                </div>
+                <p style="color: #ad0a0a;">Advanced</p>
+                <p style="color: #F8CF2C;">Intermediate</p>
+                <p style="color: #0a7721;">Beginner</p>
+            </div>
+            <div class="projects" id="projects">
+                <h1>PROJECTS</h1>
+                <div class="tile fade-in">
+                    <div class="upperLine">
+                        <h3>CPI/SPI Calculator</h3>
+                        <p>Self Project</p>
+                    </div>
+                    <p>A app to calculate CPI/SPI (for IITK students).</p>
+                    <div class="bottomLine">
+                        <a target="_blank" href="https://h4rshp.github.io/CPI-SPI-Calculator/">Working app</a>
+                        <a target="_blank" href="https://github.com/h4rSHp/CPI-SPI-Calculator">Github Repo</a>
+                    </div>
+                </div>
+                <div class="tile fade-in">
+                    <div class="upperLine">
+                        <h3>Grade Percent</h3>
+                        <p>Self Project</p>
+                    </div>
+                    <p>A app which uses the grade data of previous years of IITK courses and provide the details of which course has higher/lower grade percent to find the best course in terms of the grading.</p>
+                    <div class="bottomLine">
+                        <a target="_blank" href="https://h44rshp.github.io/grade-percent/">Working app</a>
+                        <a target="_blank" href="https://github.com/h4rSHp/grade-percent/">Github Repo</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <p style="color: #ad0a0a;">Advanced</p>
-        <p style="color: #F8CF2C;">Intermediate</p>
-        <p style="color: #0a7721;">Beginner</p>
-      </div>
-      <div class="projects" id="projects">
-        <h1>PROJECTS</h1>
-        <div class="tile">
-          <div class="upperLine">
-            <h3>CPI/SPI Calculator</h3>
-            <p>Self Project</p>
-          </div>
-          <p>A app to calculate CPI/SPI (for IITK students).</p>
-          <div class="bottomLine">
-            <a target="_blank" href="https://h4rshp.github.io/CPI-SPI-Calculator/">Working app</a>
-            <a target="_blank" href="https://github.com/h4rSHp/CPI-SPI-Calculator">Github Repo</a>
-          </div>
-        </div>
-        <div class="tile">
-          <div class="upperLine">
-            <h3>Grade Percent</h3>
-            <p>Self Project</p>
-          </div>
-          <p>A app which uses the grade data of previous years of IITK courses and provide the details of which course has higher/lower grade percent to find the best course in terms of the grading.</p>
-          <div class="bottomLine">
-            <a target="_blank" href="https://h44rshp.github.io/grade-percent/">Working app</a>
-            <a target="_blank" href="https://github.com/h4rSHp/grade-percent/">Github Repo</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--  -->
-    <!-- Works -->
-    <!--  -->
-      <div class="lowerRect" id="lowerRect" style="text-align: center; overflow: hidden;">
-        <h1 id="Works" style="color: white; font-size: 45px;">INTERESTS</h1>
-        <!-- Middle Buttons -->
-        <div class="flex_btn">
-          <a href="illustration.html" target="_blank" class="lower_btn"><i class="fas fa-bezier-curve"></i>Illustrations</a>
-          <a href="#" target="_blank" class="lower_btn"><div><i><img src="svg/animation-black-18dp.svg" alt="SVG"></i></div>Animation</a>
-          <a href="#" target="_blank" class="lower_btn"><div><i><img src="svg/Animation2.svg" alt="SVG"></i></div>Video Editing</a>
-          <a href="#" target="_blank" class="lower_btn"><i class="far fa-file-code"></i>Web Dev</a>
-          <a href="#" target="_blank" class="lower_btn"><i class="fas fa-camera-retro"></i>Photography</a>
-          <a href="#" target="_blank" class="lower_btn"><i class="fas fa-film"></i>Movies</a>
-          <a href="https://h4rshp.github.io/Blog" target="_blank" class="lower_btn"><i class="fas fa-film"></i>Blog</a>
-        </div>
-    </div>
-    <!--  -->
-    <!-- Contact Bar -->
-    <!--  -->
-    <!--  -->
-    <!-- Footer -->
-    <!--  -->
-    <div class="footer">
-      <div class="contactBar" title="Contact Me" id="contactBar">
-        <h1 style="color: #ffffff; font-size: 40px;">CONTACT ME</h1>
-        <div class="contactTiles">
-          <div>
-            <a href="https://www.facebook.com/h4r5hp/" target="_blank" title="Facebook">
-              <i class="fab fa-facebook-f"><br><span style="font-size: 18px;">Facebook</span></i>
-            </a>
-          </div>
-          <div>
-            <a href="https://www.instagram.com/h4r5h.p/" target="_blank" title="Instagram">
-              <i class="fab fa-instagram"><br><span style="font-size: 18px;">Instagram</span></i>
-            </a>
-          </div>
-          <div>
-            <a href="#" target="_blank" title="linkedin">
-              <i class="fab fa-linkedin-in"><br><span style="font-size: 18px;">Linkedin</span></i>
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com/h4rSHp" target="_blank" title="GitHub">
-              <i class="fab fa-github"><br><span style="font-size: 18px;">GitHub</span></i>
-            </a>
-          </div>
-          <div>
-            <a href="#" target="_blank" title="Email">
-              <i class="fas fa-envelope"><br><span style="font-size: 18px; font-weight: 400;">Email</sp an></i>
-            </a>
-          </div>
-        </div>
-      </div>
         <!--  -->
-        <!-- Comment Box -->
+        <!-- Works -->
         <!--  -->
-      <div class="comment" id="Comment">
-        <form id="commentForm" onsubmit="return postToGoogle();" action="" autocomplete="off" class="comment_form">
-          <h3 style="align-self: center;">LEAVE A COMMENT</h3>
-          <div class="inputs">
-            <input name="entry.1486345417"  id="commentText" placeholder="Enter the comment..." type="text" required>
-          </div>
-          <div class="inputs">
-            <input name="entry.15102802" id="nameText" placeholder="Enter Your Name.." type="text" required>
-          </div>
-          <input type="submit" name="submit" value="Submit" id="send">
-        </form>
-        <div class="successContainer">
-          <span class="success" style="display: none; color: white;">Thanks for Feedback</span>
+        <div class="lowerRect" id="lowerRect" style="text-align: center; overflow: hidden;">
+            <h1 id="Works" style="color: white; font-size: 45px;">INTERESTS</h1>
+            <!-- Middle Buttons -->
+            <div class="flex_btn fade-in">
+                <a href="illustration.html" target="_blank" class="lower_btn"><i class="fas fa-bezier-curve"></i>Illustrations</a>
+                <a href="#" target="_blank" class="lower_btn">
+                    <div><i><img src="svg/animation-black-18dp.svg" alt="SVG"></i></div>Animation</a>
+                <a href="#" target="_blank" class="lower_btn">
+                    <div><i><img src="svg/Animation2.svg" alt="SVG"></i></div>Video Editing</a>
+                <a href="#" target="_blank" class="lower_btn"><i class="far fa-file-code"></i>Web Dev</a>
+                <a href="#" target="_blank" class="lower_btn"><i class="fas fa-camera-retro"></i>Photography</a>
+                <a href="#" target="_blank" class="lower_btn"><i class="fas fa-film"></i>Movies</a>
+                <a href="https://h4rshp.github.io/Blog" target="_blank" class="lower_btn"><i class="fas fa-film"></i>Blog</a>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="copyright">
-      <p>Copyright &#169 Harsh Patel 2021</p>
-    </div>
-      <!--  -->
-      <!-- Go to Top-->
-      <!--  -->
-    <a href="#header" id="arrow" title="Go to top">
-      <i class="material-icons arrow">
+        <!--  -->
+        <!-- Contact Bar -->
+        <!--  -->
+        <!--  -->
+        <!-- Footer -->
+        <!--  -->
+        <div class="footer">
+            <div class="contactBar fade-in" title="Contact Me" id="contactBar">
+                <h1 style="color: #ffffff; font-size: 40px;">CONTACT ME</h1>
+                <div class="contactTiles">
+                    <div>
+                        <a href="https://www.facebook.com/h4r5hp/" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook-f"><br><span style="font-size: 18px;">Facebook</span></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/h4r5h.p/" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"><br><span style="font-size: 18px;">Instagram</span></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" target="_blank" title="linkedin">
+                            <i class="fab fa-linkedin-in"><br><span style="font-size: 18px;">Linkedin</span></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/h4rSHp" target="_blank" title="GitHub">
+                            <i class="fab fa-github"><br><span style="font-size: 18px;">GitHub</span></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" target="_blank" title="Email">
+                            <i class="fas fa-envelope"><br><span style="font-size: 18px; font-weight: 400;">Email</sp an></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <!-- Comment Box -->
+            <!--  -->
+            <div class="comment fade-in" id="Comment">
+                <form id="commentForm" onsubmit="return postToGoogle();" action="" autocomplete="off" class="comment_form">
+                    <h3 style="align-self: center;">LEAVE A COMMENT</h3>
+                    <div class="inputs">
+                        <input name="entry.1486345417" id="commentText" placeholder="Enter the comment..." type="text" required>
+                    </div>
+                    <div class="inputs">
+                        <input name="entry.15102802" id="nameText" placeholder="Enter Your Name.." type="text" required>
+                    </div>
+                    <input type="submit" name="submit" value="Submit" id="send">
+                </form>
+                <div class="successContainer">
+                    <span class="success" style="display: none; color: white;">Thanks for Feedback</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169 Harsh Patel 2021</p>
+        </div>
+        <!--  -->
+        <!-- Go to Top-->
+        <!--  -->
+        <a href="#header" id="arrow" title="Go to top">
+            <i class="material-icons arrow">
         double_arrow
       </i>
-    </a>
-    <!--  -->
-    <!-- Menu Dropdown -->
-    <!--  -->
-    <div class="dropdwn" id="dropdwn">
-      <div class="dropdown-bar">
-      <div class="name"><a href="https://h4rshp.github.io/Hey/">H<span>4</span>RSH PATEL</a></div>
-      <button class="fas fa-bars dropbtn" onclick="myFunction()"></button>
-      </div>
-        <div class="dropdwn-content" id="myDropdown">
-          <a href="#header">Home</a>
-          <a href="#aboutMe">About Me</a>
-          <a href="#Works">Works</a>
-          <a href="#Comment">Leave a Comment</a>
-          <a href="#contactBar">Contact Me</a>
+        </a>
+        <!--  -->
+        <!-- Menu Dropdown -->
+        <!--  -->
+        <div class="dropdwn" id="dropdwn">
+            <div class="dropdown-bar">
+                <div class="name"><a href="https://h4rshp.github.io/Hey/">H<span>4</span>RSH PATEL</a></div>
+                <button class="fas fa-bars dropbtn" onclick="myFunction()"></button>
+            </div>
+            <div class="dropdwn-content" id="myDropdown">
+                <a href="#header">Home</a>
+                <a href="#aboutMe">About Me</a>
+                <a href="#Works">Interests</a>
+                <a href="#Comment">Leave a Comment</a>
+                <a href="#contactBar">Contact Me</a>
+            </div>
+        </div>
+        <!--  -->
+        <!-- Nav Bar -->
+        <!--  -->
+        <div class="navbar">
+            <div class="navbar-content">
+                <div class="name"><a href="https://h4rshp.github.io/Hey/">H<span>4</span>RSH PATEL</a></div>
+                <ul>
+                    <li><a href="#header" class="first">HOME</a></li>
+                    <li><a href="#aboutMe">ABOUT ME</a></li>
+                    <li><a href="#Works">INTERESTS</a></li>
+                    <li><a href="#Comment">COMMENT</a></li>
+                    <li><a href="#contactBar">CONTACT ME</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <!--  -->
-    <!-- Nav Bar -->
-    <!--  -->
-    <div class="navbar">
-      <div class="navbar-content">
-        <div class="name"><a href="https://h4rshp.github.io/Hey/">H<span>4</span>RSH PATEL</a></div>
-        <ul>
-          <li><a style="color: #a5a5a5;" href="#header">HOME</a></li>
-          <li><a href="#aboutMe">ABOUT ME</a></li>
-          <li><a href="#Works">INTERESTS</a></li>
-          <li><a href="#Comment">COMMENT</a></li>
-          <li><a href="#contactBar">CONTACT ME</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
 </body>
 <script src="style.js"></script>
+
 </html>
