@@ -1,0 +1,39 @@
+body{
+    position: relative;
+}
+
+@for $i from 0 through 9{
+    .circle-overlay div:nth-child(#{$i}){
+        // opacity: 0.8;
+        width: 6px;
+        // filter: blur(2px);
+        height: 6px;
+        box-shadow: random(200)+px random(200)+px hsl(($i+1)*20, 69%, 33%);
+        border-radius: 20px;
+        // border: 1px solid red;
+        background-color: hsl(($i+1)*40, 69%, 33%);
+        position: fixed;
+        // top: ($i)*random(10)+vh;
+        left: $i*10+vw;
+        animation: fly+#{$i} 12s ($i+1)*random(15)*0.1-0.5s ease-in-out infinite backwards;
+    }
+    @keyframes fly#{$i} {
+        0%{
+            scale: 0;
+            opacity: 0;
+            top: 100vh;
+        }
+        10%{
+            scale: 1;
+            opacity: 1;
+        }
+        90%{
+            opacity: 1;
+        }
+        100%{
+            top: 0;
+            opacity: 0;
+        }
+    }
+}
+

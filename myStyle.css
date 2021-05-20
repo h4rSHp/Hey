@@ -1,0 +1,296 @@
+body {
+  position: relative;
+}
+
+.circle-overlay div:nth-child(0) {
+  width: 6px;
+  height: 6px;
+  box-shadow: 121px 6px #8e411a;
+  border-radius: 20px;
+  background-color: #8e681a;
+  position: fixed;
+  left: 0vw;
+  animation: fly0 12s 0.1s ease-in-out infinite backwards;
+}
+
+@keyframes fly0 {
+  0% {
+    scale: 0;
+    opacity: 0;
+    top: 100vh;
+  }
+  10% {
+    scale: 1;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+.circle-overlay div:nth-child(1) {
+  width: 6px;
+  height: 6px;
+  box-shadow: 149px 128px #8e681a;
+  border-radius: 20px;
+  background-color: #688e1a;
+  position: fixed;
+  left: 10vw;
+  animation: fly1 12s -0.1s ease-in-out infinite backwards;
+}
+
+@keyframes fly1 {
+  0% {
+    scale: 0;
+    opacity: 0;
+    top: 100vh;
+  }
+  10% {
+    scale: 1;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+.circle-overlay div:nth-child(2) {
+  width: 6px;
+  height: 6px;
+  box-shadow: 50px 57px #8e8e1a;
+  border-radius: 20px;
+  background-color: #1a8e1a;
+  position: fixed;
+  left: 20vw;
+  animation: fly2 12s 1s ease-in-out infinite backwards;
+}
+
+@keyframes fly2 {
+  0% {
+    scale: 0;
+    opacity: 0;
+    top: 100vh;
+  }
+  10% {
+    scale: 1;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+.circle-overlay div:nth-child(3) {
+  width: 6px;
+  height: 6px;
+  box-shadow: 26px 116px #688e1a;
+  border-radius: 20px;
+  background-color: #1a8e68;
+  position: fixed;
+  left: 30vw;
+  animation: fly3 12s 4.7s ease-in-out infinite backwards;
+}
+
+@keyframes fly3 {
+  0% {
+    scale: 0;
+    opacity: 0;
+    top: 100vh;
+  }
+  10% {
+    scale: 1;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+.circle-overlay div:nth-child(4) {
+  width: 6px;
+  height: 6px;
+  box-shadow: 151px 141px #418e1a;
+  border-radius: 20px;
+  background-color: #1a688e;
+  position: fixed;
+  left: 40vw;
+  animation: fly4 12s 3.5s ease-in-out infinite backwards;
+}
+
+@keyframes fly4 {
+  0% {
+    scale: 0;
+    opacity: 0;
+    top: 100vh;
+  }
+  10% {
+    scale: 1;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+.circle-overlay div:nth-child(5) {
+  width: 6px;
+  height: 6px;
+  box-shadow: 112px 54px #1a8e1a;
+  border-radius: 20px;
+  background-color: #1a1a8e;
+  position: fixed;
+  left: 50vw;
+  animation: fly5 12s 5.5s ease-in-out infinite backwards;
+}
+
+@keyframes fly5 {
+  0% {
+    scale: 0;
+    opacity: 0;
+    top: 100vh;
+  }
+  10% {
+    scale: 1;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+.circle-overlay div:nth-child(6) {
+  width: 6px;
+  height: 6px;
+  box-shadow: 119px 186px #1a8e41;
+  border-radius: 20px;
+  background-color: #681a8e;
+  position: fixed;
+  left: 60vw;
+  animation: fly6 12s 5.8s ease-in-out infinite backwards;
+}
+
+@keyframes fly6 {
+  0% {
+    scale: 0;
+    opacity: 0;
+    top: 100vh;
+  }
+  10% {
+    scale: 1;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+.circle-overlay div:nth-child(7) {
+  width: 6px;
+  height: 6px;
+  box-shadow: 180px 51px #1a8e68;
+  border-radius: 20px;
+  background-color: #8e1a68;
+  position: fixed;
+  left: 70vw;
+  animation: fly7 12s 10.7s ease-in-out infinite backwards;
+}
+
+@keyframes fly7 {
+  0% {
+    scale: 0;
+    opacity: 0;
+    top: 100vh;
+  }
+  10% {
+    scale: 1;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+.circle-overlay div:nth-child(8) {
+  width: 6px;
+  height: 6px;
+  box-shadow: 161px 58px #1a8e8e;
+  border-radius: 20px;
+  background-color: #8e1a1a;
+  position: fixed;
+  left: 80vw;
+  animation: fly8 12s 3.1s ease-in-out infinite backwards;
+}
+
+@keyframes fly8 {
+  0% {
+    scale: 0;
+    opacity: 0;
+    top: 100vh;
+  }
+  10% {
+    scale: 1;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+.circle-overlay div:nth-child(9) {
+  width: 6px;
+  height: 6px;
+  box-shadow: 187px 25px #1a688e;
+  border-radius: 20px;
+  background-color: #8e681a;
+  position: fixed;
+  left: 90vw;
+  animation: fly9 12s 9.5s ease-in-out infinite backwards;
+}
+
+@keyframes fly9 {
+  0% {
+    scale: 0;
+    opacity: 0;
+    top: 100vh;
+  }
+  10% {
+    scale: 1;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=myStyle.css.map */
